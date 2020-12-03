@@ -25,7 +25,7 @@ public class ProductController{
 		
 		
 	}
-	@GetMapping("/products/{id")
+	@GetMapping("/products/{id}")
 	public ResponseEntity<Product> get(@PathVariable Integer id) {
 		try {
 		Product product = service.get(id);
@@ -43,7 +43,7 @@ public class ProductController{
 		service.save(product);
 		
 	}
-	@PutMapping("/products/{id")
+	@PutMapping("/products/{id}")
 	public ResponseEntity<?> update(@RequestBody Product product, @PathVariable Integer id) {
 		try {
 			Product existProduct = service.get(id);
